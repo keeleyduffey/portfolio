@@ -80,7 +80,6 @@ h2 {
 
 nav,
 footer {
-	width: 33%;
 	padding: 20px;
 	background: darkgray;
 }
@@ -97,7 +96,6 @@ footer {
 
 section {
 	height: 400px;
-	width: 70%;
 	margin: 20px auto;
 	background-color: lightgray;
 	padding: 20px;
