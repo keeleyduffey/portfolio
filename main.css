@@ -49,15 +49,18 @@ table {
 
 /****** end of reset ******/
 
+/*font-family: 'Poiret One', cursive;
+font-family: 'Roboto', sans-serif;*/
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	padding: 50px;
-	font-family: sans-serif;
+	padding: 50px 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
 	font-size: 20px;
-	text-align: center;
 }
 
 header,
@@ -65,39 +68,83 @@ nav,
 main,
 footer {
 	margin: 0 auto;
+	text-align: center;
+}
+
+.main-content {
+	display: none;
 }
 
 h1 {
   font-size: 40px;
-  font-weight: 300;
   padding: 30px;
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
 }
 
 h2 {
 	font-size: 30px;
 	padding: 30px;
+	text-align: center;
+}
+
+header {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+header,
+main {
+	min-height: 88vh;
 }
 
 nav,
 footer {
 	padding: 20px;
-	background: darkgray;
 }
 
-.grey-box {
-	width: 200px;
-	height: 200px;
-	background: gray;
-	color: #fff;
-	margin: 20px auto;
-	padding: 90px 0;
+footer {
+  position: absolute;
+  width: 100%;
+}
+
+.intro-screen h1 {
+	font-size: 50px;
+}
+
+.intro-screen .img-wrapper img {
+	width: 300px
+} 
+
+
+ul li {
 	display: inline-block;
+	min-width: 150px;
+}
+
+.img-wrapper {
+	width: 100%;
+}
+
+.img-wrapper img {
+	width: 200px;
+}
+
+img {
+	margin: 0 auto;
+	display: block;
 }
 
 section {
-	height: 400px;
 	margin: 20px auto;
-	background-color: lightgray;
+	text-align: left;
+}
+
+.about-container,
+.container {
+	display: flex;
+	flex-direction: column;
 }
 
 .bio-text,
@@ -106,30 +153,53 @@ section {
 	display: block;
 }
 
-.grey-box.bio {
-	display: block;
+.about-container p,
+.projects-wrapper {
+	width: 100%;
 }
 
+p {
+	padding: 40px;
+}
 
+.contact-wrapper li {
+	display: block;
+	line-height: 32px
+}
 
+span.contact-label {
+	width: 200px;
+	display: inline-block;
+}
 
+.fas,
+.fab {
+	padding: 30px;
+}
 
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+.header-wrapper a:hover,
+.header-wrapper a:active,
+.header-wrapper a:focus {
+	color: #5D8F71;
+	border-bottom: 2px solid #5D8F71;
+}
 
 
 @media screen and (min-width: 850px) {
-
-	.about-container
-	.projects-container {
-		width: 100%;
-	}
-
-	.grey-box.bio {
-		display: inline-block;
-	}
-
-	.bio-text,
+	/*.about-container .bio-img-wrapper,*/
+	.about-container p,
 	.projects-wrapper {
 		width: 45%;
-		display: inline-block;
+	}
+	.about-container,
+	.container {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }
+
