@@ -100,32 +100,36 @@ section {
 	background-color: lightgray;
 }
 
-.about-container
-.projects-container {
+.bio-text,
+.projects-wrapper {
 	width: 100%;
+	display: block;
 }
 
 .grey-box.bio {
-	display: inline-block;
-}
-
-.bio-text,
-.projects-wrapper {
-	width: 45%;
-	display: inline-block;
+	display: block;
 }
 
 
 
 
-@media screen and (max-width: 850px) {
-	.bio-text,
-	.projects-wrapper {
+
+
+
+@media screen and (min-width: 850px) {
+
+	.about-container
+	.projects-container {
 		width: 100%;
-		display: block;
 	}
 
 	.grey-box.bio {
-		display: block;
+		display: inline-block;
+	}
+
+	.bio-text,
+	.projects-wrapper {
+		width: 45%;
+		display: inline-block;
 	}
 }
