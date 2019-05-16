@@ -2,31 +2,51 @@
 
 function createPortfolioSection () {
 	return `
-    <section class="projects-wrapper">
-	    <h2>Pluto</h2>
-	    <p>
-	    	Pluto is a diversity and inclusion platform that provides companies with the tools and insights they need to build a diverse, inclusive and equitable workforce.  Companies gain actionable insights from comprehensive analytics, allowing them to tailor initiatives and measure their impact.  Pluto also offers incident reporting to remove barriers that have historically plagued incident reporting systems and help companies discover and address workplace issues faster.
-	    </p>
-	    <p>
-	    	MongoDb, Express, Angular 1.6, NodeJs, Highcharts, HMTL, CSS
-	    </p>
-	    <p>
-	    	<a href="https://pluto.life">View live</a>
-	    </p>
+    <section class="projects-wrapper reverse">
+		  <div class="project-text-wrapper">
+		  	<h2>Pluto</h2>
+		    <p>
+		    	Pluto is a diversity and inclusion platform that provides companies with the tools and insights they need to build a diverse, inclusive and equitable workforce.  Companies gain actionable insights from comprehensive analytics, allowing them to tailor initiatives and measure their impact.  Pluto also offers incident reporting to remove barriers that have historically plagued incident reporting systems and help companies discover and address workplace issues faster.
+		    </p>
+		    <br>
+		    <p>
+		    	MongoDb, Express, Angular 1.6, NodeJs, Highcharts, HMTL, CSS
+		    </p>
+		    <br>
+		    <a href="https://pluto.life">View live</a>
+
+		  </div>
+
+		  <div class="project-image-wrapper">
+	    	<img src="assets/pluto-full.png" alt="Pluto's landing page">
+	    </div>
+
+	    
 	  </section>
 
 	  <section class="projects-wrapper">
-	    <h2>FRIENDS Quiz</h2>
-	    <p>
-	    	This was a short quiz about the television series FRIENDS
-	    </p>
-	    <p>
-	    	HMTL5, CSS, jQuery
-	    </p>
-	    <p>
+	    
+	    <div class="project-text-wrapper">
+	    	<h2>FRIENDS Quiz</h2>
+		    <p>
+		    	This was a short quiz about the television series FRIENDS covering some basic and not-so-basic knowledge about the characters and plot of the show
+		    </p>
+		    <br>
+		    <p>
+		    	HMTL5, CSS, jQuery
+		    </p>
+		   	<br>
 	    	<a href="https://keeleyduffey.github.io/quiz-app/">View live</a>
 	    	<a href="https://github.com/keeleyduffey/quiz-app/">View on Github</a>
-	    </p>
+		  </div>
+
+	    <div class="project-image-wrapper">
+	      <img src="assets/friends1.png" alt="FRIENDS quiz start page">
+		    <img src="assets/friends2.png" alt="FRIENDS question page">
+		    <img src="assets/friends3.png" alt="FRIENDS answer page">
+		    <img src="assets/friends4.png" alt="FRIENDS final page">
+	    </div>
+		   
 	  </section>
 	`;
 }
@@ -34,18 +54,19 @@ function createPortfolioSection () {
 function createAboutSection () {
 	return `
     <section class="about-container">
-	    <!-- <h2>About</h2> -->
-	     <!-- <div class="bio-wrapper">   -->
-	     	<div class="bio-img-wrapper">
-		    	<img src="assets/keeley_duffey.jpg" alt="Keeley Duffey">
-			 	</div>
+     
+     	<div class="bio-img-wrapper">
+	    	<img src="assets/keeley_duffey.jpg" alt="Keeley Duffey">
+		 	</div>
+
+		 	<div class="bio-text-wrapper">  
 		    <p> 
 		    	I am a full stack developer with 3 years of experience, currently working in Javascript, AngularJs, Express, NodeJs, MongoDB, and jQuery but always interested in learning more. I enjoy writing clean code, using new technologies, and leveraging the power of code to connect people. I also enjoy the continual learning that programming brings. 
 					<br>
 					<br>
 					Past experience in customer service and non-profit work, as well as living in a few countries, has taught me how to communicate effectively and adapt in order to be successful in various work environments.  As a developer, I bring these skills along with passion, dedication and self-awareness to the work I do. Outside of work, I enjoy spending time outdoors, watching college football (Go Dawgs!), traveling and reading good books.
  				</p>
- 			<!-- </div> -->
+ 			</div>
 	  </section>
 	`;
 }
