@@ -139,6 +139,10 @@ section {
 	text-align: left;
 }
 
+.headline {
+	padding-top: 30px;
+}
+
 .about-container,
 .container, 
 .projects-wrapper {
@@ -205,7 +209,7 @@ img {
 .project-text-wrapper a {
 	background: #FFF3F2;
 	padding: 10px;
-	/*color: #8F6D6B;*/
+	color: #000;
 	margin: 0 auto;
 	border: 2px solid #FFF3F2
 }
