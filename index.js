@@ -98,13 +98,17 @@ function createContactSection () {
 	`;
 }
 
+function setElementsDisplayProperties () {
+	$('.intro-screen').css('display', 'none');
+	$('.main-content').css('display', 'block');
+	$('.container').css('display', 'flex');
+}
+
 
 function renderPortfolio () {
 	$('.portfolio-btn').on('click', (event) => {
 		event.preventDefault();
-		$('.intro-screen').css('display', 'none');
-		$('.main-content').css('display', 'block');
-		$('.container').css('display', 'flex');
+		setElementsDisplayProperties();
 		$('.container').html(createPortfolioSection());
 		
 	})
@@ -113,9 +117,7 @@ function renderPortfolio () {
 function renderAbout () {
 	$('.about-btn').on('click', (event) => {
 		event.preventDefault();
-		$('.intro-screen').css('display', 'none');
-		$('.main-content').css('display', 'block');
-		$('.container').css('display', 'flex');
+		setElementsDisplayProperties();
 		$('.container').html(createAboutSection());
 		
 	})
@@ -124,9 +126,7 @@ function renderAbout () {
 function renderContact () {
 	$('.contact-btn').on('click', (event) => {
 		event.preventDefault();
-		$('.intro-screen').css('display', 'none');
-		$('.main-content').css('display', 'block');
-		$('.container').css('display', 'flex');
+		setElementsDisplayProperties();
 		$('.container').html(createContactSection());
 		
 	})
