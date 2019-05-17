@@ -220,6 +220,16 @@ img {
 	border: 2px solid #DCBEBC;	
 }
 
+.bio-img-wrapper {
+	width: 40%;
+	padding: 20px;
+}
+
+.bio-img-wrapper img {
+	max-width: 100%;
+	max-height: 400px;
+}
+
 .contact-wrapper li {
 	display: block;
 	line-height: 32px

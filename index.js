@@ -56,7 +56,7 @@ function createAboutSection () {
     <section class="about-container">
      
      	<div class="bio-img-wrapper">
-	    	<img src="assets/keeley_duffey.jpg" alt="Keeley Duffey">
+	    	<img src="assets/keeley.jpeg" alt="Keeley Duffey">
 		 	</div>
 
 		 	<div class="bio-text-wrapper">  
