@@ -1,6 +1,8 @@
 # portfolio
 My personal portfolio
 
-Currently using HTML5 and CSS
+A brief showcasing of projects I have worked on (FRIENDS quiz + Pluto, D&I platform)
 
-A brief showcasing of projects I have worked on
+This will be ever evolving as I build more and work on more projects
+
+Built using jQuery, HTML5 and CSS
