@@ -121,7 +121,6 @@ footer {
   position: absolute;
   width: 100%;
   font-size: 16px;
-  font-weight: 200px;
 }
 
 section {
@@ -138,14 +137,13 @@ img {
 	display: block;
 }
 
-
 a {
 	text-decoration: none;
 	color: #555;
 }
 
 .headline {
-	padding-top: 30px;
+	padding: 30px;
 	line-height: 42px;
 	font-size: 26px;
 }
@@ -155,7 +153,6 @@ a {
 .projects-wrapper {
 	display: flex;
 	flex-direction: column;
-	/*transition: s all;*/
 }
 
 .header-wrapper {
@@ -233,6 +230,10 @@ a {
 	line-height: 32px
 }
 
+.contact-wrapper li a {
+	padding: 40px 30px;
+}
+
 span.contact-label {
 	width: 200px;
 	display: inline-block;
@@ -301,7 +302,7 @@ span.contact-label {
 	.bio-img-wrapper {
 		width: 40%;
 	}
-
+}
 
 @media screen and (min-height: 1150px) {
 	header {

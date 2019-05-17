@@ -13,7 +13,7 @@ function createPortfolioSection () {
 		    	MongoDb, Express, Angular 1.6, NodeJs, Highcharts, HMTL, CSS
 		    </p>
 		    <br>
-		    <a href="https://pluto.life">View live</a>
+		    <a href="https://pluto.life" target="_blank">View live</a>
 
 		  </div>
 
@@ -36,8 +36,8 @@ function createPortfolioSection () {
 		    	HMTL5, CSS, jQuery
 		    </p>
 		   	<br>
-	    	<a href="https://keeleyduffey.github.io/quiz-app/">View live</a>
-	    	<a href="https://github.com/keeleyduffey/quiz-app/">View on Github</a>
+	    	<a href="https://keeleyduffey.github.io/quiz-app/" target="_blank">View live</a>
+	    	<a href="https://github.com/keeleyduffey/quiz-app/" target="_blank">View on Github</a>
 		  </div>
 
 	    <div class="project-image-wrapper">
@@ -74,23 +74,22 @@ function createAboutSection () {
 function createContactSection () {
 	return `
    <section class="contact-wrapper">
-	    <!-- <h2>Contact</h2> -->
 	    <ul>
 	    	<li>
-	    		<span class="contact-label">Connect with me:</span>
 	    		<a href="https://www.linkedin.com/in/keeleyduffey/" target="_blank">
+	    			<span class="contact-label">Connect with me:</span>
 	    			<i class="fab fa-linkedin-in"></i>
 					</a>			    	
 	    	</li>
 	    	<li>
-	    		<span class="contact-label">Check out my work:</span> 
 	    		<a href="https://github.com/keeleyduffey/" target="_blank">
+	    			<span class="contact-label">Check out my work:</span> 
 	    			<i class="fab fa-github"></i>
 					</a>			    	
 	    	</li>
 	    	<li>
-	    		<span class="contact-label">Write to me:</span>
 	    		<a href="mailto:keeleyduffey@gmail.com">
+	    			<span class="contact-label">Write to me:</span>
 	    			<i class="fas fa-envelope"></i>
 					</a>			    	
 	    	</li>
@@ -133,53 +132,10 @@ function renderContact () {
 	})
 }
 
-// function submitAnswer () {
-// 	$('.content-container').on('submit', 'form', function(event) {
-// 		event.preventDefault();
-
-// 		const selection = $("input:checked").val(),
-// 			questionObj = questions[count],
-// 			correctAnswer = questions[count].correctAnswer;
-
-// 		if (selection === correctAnswer) {
-// 			correctAnswerCount++;
-// 			renderCorrectAnswerMessage(questionObj);
-// 		} else {
-// 			incorrectAnswerCount++;
-// 			renderIncorrectAnswerMessage(questionObj);
-// 		}
-// 		count++;
-// 	})
-// }
-
-// function nextClick () {
-// 	$('.content-container').on('click', '.next-question-btn', function(event) {
-// 		event.preventDefault();
-// 		if (count < questions.length) {
-// 			renderQuestion();
-// 		} else {
-// 			renderFinalScreen();
-// 		}
-// 	})
-// }
-
-// function retakeQuiz () {
-// 	$('.content-container').on('click', '.retake-quiz-btn', function(event) {
-// 		event.preventDefault();
-// 		resetAllCounts();
-// 		$('.status-container').css('display', 'none');
-// 		$('.content-container').css('display', 'none');
-// 		$('.intro-screen').css('display', 'block');
-// 	})
-// }
-
 function handleQuiz () {
 	renderPortfolio();
 	renderAbout();
 	renderContact();
-	// submitAnswer();
-	// nextClick();
-	// retakeQuiz();
 }
 
 $(handleQuiz);
