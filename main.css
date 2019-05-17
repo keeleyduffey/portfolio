@@ -131,6 +131,7 @@ p {
 img {
 	margin: 0 auto;
 	display: block;
+	transition: 250ms all;
 }
 
 a {
@@ -302,5 +303,21 @@ span.contact-label {
 	header {
 		padding-top: 10vh;
 	}
+}
+
+@media screen and (min-width: 1300px) {
+	.bio-img-wrapper {
+    width: 20%;
+	}
+
+	.bio-text-wrapper {
+    max-width: 900px;
+	}
+
+	.projects-container,
+	.about-container {
+		justify-content: space-evenly;
+	}
+
 }
 
