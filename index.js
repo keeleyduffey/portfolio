@@ -1,7 +1,33 @@
 'use strict';
 
+function scrollToTop () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+}
+
 function createPortfolioSection () {
 	return `
+    <section class="projects-wrapper">
+		  <div class="project-text-wrapper">
+		  	<h2>Food Finds</h2>
+		    <p>
+		    	Food Finds allows users to search for a food and receive a specified number of recipes, up to 10 New York Times articles, and a related video from YouTube
+		    </p>
+		    <br>
+		    <p>
+		    	HMTL5, CSS, JavaScript, jQuery, Edamam API, New York Times API, and YouTube API
+		    </p>
+		    <br>
+		    <a href="https://keeleyduffey.github.io/food-finds/" target="_blank">View live</a>
+	    	<a href="https://github.com/keeleyduffey/food-finds/" target="_blank">View on Github</a>
+
+		  </div>
+
+		  <div class="project-image-wrapper">
+	    	<img src="assets/food-finds-full.png" alt="Food Finds Example with Pad Thai">
+	    </div>
+
+	    
+	  </section>
     <section class="projects-wrapper reverse">
 		  <div class="project-text-wrapper">
 		  	<h2>Pluto</h2>
@@ -108,6 +134,7 @@ function setElementsDisplayProperties () {
 function renderPortfolio () {
 	$('.portfolio-btn').on('click', (event) => {
 		event.preventDefault();
+		scrollToTop();
 		setElementsDisplayProperties();
 		$('.container').html(createPortfolioSection());
 		
@@ -117,6 +144,7 @@ function renderPortfolio () {
 function renderAbout () {
 	$('.about-btn').on('click', (event) => {
 		event.preventDefault();
+		scrollToTop();
 		setElementsDisplayProperties();
 		$('.container').html(createAboutSection());
 		
@@ -127,6 +155,7 @@ function renderContact () {
 	$('.contact-btn').on('click', (event) => {
 		event.preventDefault();
 		setElementsDisplayProperties();
+		scrollToTop();
 		$('.container').html(createContactSection());
 		
 	})
@@ -136,6 +165,7 @@ function handleQuiz () {
 	renderPortfolio();
 	renderAbout();
 	renderContact();
+	scrollToTop();
 }
 
 $(handleQuiz);
